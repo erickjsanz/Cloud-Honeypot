@@ -17,6 +17,21 @@ The metrics analyzed were:
 - SecurityIncident (Incidents created by Sentinel)
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
+## Technologies, Azure Components, and Regulations Employed
+- Azure Virtual Network (VNet)
+- Azure Network Security Groups (NSG)
+- Virtual Machines: 2 Windows VMs, 1 Linux VM
+- Log Analytics Workspace with Kusto Query Language (KQL) Queries
+- Azure Key Vault for Secure Secrets Management
+- Azure Storage Account for Data Storage
+- Microsoft Sentinel for Security Information and Event Management (SIEM)
+- Microsoft Defender for Cloud to Protect Cloud Resources
+- Windows Remote Desktop (RDP) for Remote Access
+- Command Line Interface (CLI) for System Management
+- PowerShell for Automation and Configuration Management
+- NIST SP 800-53 Revision 5 for Security Controls
+- NIST SP 800-61 Revision 2 for Incident Handling Guidance
+
 ## Architecture Before Hardening / Security Controls
 ![Cloud Honey + SOC(3)](https://github.com/erickjsanz/Cloud-Honeypot/assets/7691426/8b79dd7c-e7e0-4b8d-876d-97acd4a1e6fb)
 ## Architecture After Hardening / Security Controls
