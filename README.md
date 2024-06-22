@@ -57,8 +57,8 @@ In the "AFTER" stage of this project, the environment was hardened, and security
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+Start Time 2024-06-06 11:43
+Stop Time 2024-06-07 11:43
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -75,8 +75,8 @@ Stop Time 2023-03-16 17:04:29
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
+Start Time 2024-06-13 22:22
+Stop Time	2024-06-14 22:22
 
 | Metric                   | Count
 | ------------------------ | -----
