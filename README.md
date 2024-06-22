@@ -57,8 +57,8 @@ In the "AFTER" stage of this project, the environment was hardened, and security
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2024-06-06 11:43
-Stop Time 2024-06-07 11:43
+- Start Time 2024-06-06 11:43
+- Stop Time 2024-06-07 11:43
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -75,8 +75,8 @@ Stop Time 2024-06-07 11:43
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2024-06-13 22:22
-Stop Time	2024-06-14 22:22
+- Start Time 2024-06-13 22:22
+- Stop Time	2024-06-14 22:22
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -88,6 +88,8 @@ Stop Time	2024-06-14 22:22
 
 ## Conclusion
 
-In this project, a mini honeynet was constructed in Microsoft Azure and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness.
+This project has underscored the critical importance of security, and I thoroughly enjoyed creating it. Proper security controls and configurations are essential to protect resources. The before and after metrics clearly highlight the stark contrast between an insecure and a secure environment, with the attack map data illustrating these changes vividly. Implementing firewall rules, private endpoints, and restricting public internet access are crucial measures to prevent disastrous consequences caused by threat actors and unauthorized access to critical assets and resources.
+
+In conclusion, I set up a compact yet effective honeynet using Microsoft Azure's robust cloud infrastructure. Microsoft Sentinel was utilized to trigger alerts and generate incidents based on logs ingested from the watch lists. Baseline metrics were recorded in the unprotected environment before the implementation of any security controls. Following this, a range of security measures were enforced to fortify the network against potential threats. After implementing these controls, another set of measurements was taken. The comparison of pre- and post-implementation metrics demonstrated a significant reduction in security events and incidents, highlighting the effectiveness of the enforced security controls.
 
 It is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.
