@@ -47,8 +47,11 @@ In the "AFTER" stage of this project, the environment was hardened, and security
 - Private Endpoints: Replaced public endpoints with private endpoints for Azure Key Vault and Storage Containers. This limited access to the virtual network, ensuring sensitive resources were not exposed to the public Internet.
 
 ## Attack Maps Before Hardening / Security Controls
+- This attack map illustrates the traffic allowed by a Network Security Group (NSG) configured to allow all inbound traffic. The unrestricted inbound traffic setting provides an open invitation to potential threat actors.
 ![nsg-malicious-allowed-in](https://github.com/erickjsanz/Cloud-Honeypot/assets/7691426/9fd9965f-34ff-4d79-8abc-2b9d28dffd76)
+- This attack map demonstrates all the attempts by threat actors to access the Linux virtual machine via SSH (Secure Shell). The unrestricted inbound traffic setting for SSH on the Network Security Group (NSG).
 ![linux-ssh-auth-fail](https://github.com/erickjsanz/Cloud-Honeypot/assets/7691426/765f318d-2b22-424b-8b61-91539bd4d276)
+- This attack map illustrates all the attempts by threat actors to access the Windows virtual machine via RDP (Remote Desktop Protocol). The unrestricted inbound traffic setting for RDP on the Network Security Group (NSG).
 ![windows-rdp-auth-fail](https://github.com/erickjsanz/Cloud-Honeypot/assets/7691426/f8348cf8-03eb-4072-8db1-3524ba1bd8ea)
 
 ## Metrics Before Hardening / Security Controls
