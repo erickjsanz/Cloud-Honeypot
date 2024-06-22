@@ -29,8 +29,8 @@ The metrics analyzed were:
 - Windows Remote Desktop (RDP) for Remote Access
 - Command Line Interface (CLI) for System Management
 - PowerShell for Automation and Configuration Management
-- NIST SP 800-53 Revision 5 for Security Controls
-- NIST SP 800-61 Revision 2 for Incident Handling Guidance
+- [NIST SP 800-53 Revision 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) for Security Controls
+- [NIST SP 800-61 Revision 2](https://www.nist.gov/privacy-framework/nist-sp-800-61) for Incident Handling Guidance
 
 ## Architecture Before Hardening / Security Controls
 ![Cloud Honey + SOC(3)](https://github.com/erickjsanz/Cloud-Honeypot/assets/7691426/8b79dd7c-e7e0-4b8d-876d-97acd4a1e6fb)
