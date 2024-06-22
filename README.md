@@ -7,8 +7,8 @@ In this project, I constructed a mini honeynet within the Azure platform to capt
 
 The project was conducted over two distinct 24-hour phases:
 
-1)Initial Measurement Phase: Azure Sentinel monitored the metrics of an insecure environment for 24 hours.
-2)Post-Security Controls Phase: Security controls were implemented to fortify the virtual environment, followed by another 24-hour metric measurement period.
+-Initial Measurement Phase: Azure Sentinel monitored the metrics of an insecure environment for 24 hours.
+-Post-Security Controls Phase: Security controls were implemented to fortify the virtual environment, followed by another 24-hour metric measurement period.
 
 The metrics analyzed were:
 - SecurityEvent (Windows Event Logs)
