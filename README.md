@@ -34,22 +34,17 @@ The metrics analyzed were:
 
 ## Architecture Before Hardening / Security Controls
 ![Cloud Honey + SOC(3)](https://github.com/erickjsanz/Cloud-Honeypot/assets/7691426/8b79dd7c-e7e0-4b8d-876d-97acd4a1e6fb)
+
+In the "BEFORE" stage of this project, I deployed a virtual environment exposed to the public Internet to attract and analyze threat actors' attack patterns. This environment included a Windows virtual machine hosting a SQL database and a Linux server, both configured with "Allow All" network security groups (NSGs) settings. Additionally, a storage account and key vault were deployed with public endpoints to further entice attackers. Microsoft Sentinel was utilized to monitor the unsecured environment, with logs aggregated by the Log Analytics workspace.
+
 ## Architecture After Hardening / Security Controls
 ![Cloud Honey + SOC(4)](https://github.com/erickjsanz/Cloud-Honeypot/assets/7691426/70816bf5-78aa-4c6d-b7cd-5f9267ec4f10)
 
-The architecture of the mini honeynet in Azure consists of the following components:
+In the "AFTER" stage of this project, the environment was hardened, and security controls were implemented to comply with NIST SP 800-53 Rev4 SC-7(3) Access Points. The following hardening tactics were applied:
 
-- Virtual Network (VNet)
-- Network Security Group (NSG)
-- Virtual Machines (2 windows, 1 linux)
-- Log Analytics Workspace
-- Azure Key Vault
-- Azure Storage Account
-- Microsoft Sentinel
-
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
-
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+- Network Security Groups (NSGs): Hardened NSGs by blocking all inbound and outbound traffic, except for designated public IP addresses requiring access. This ensured that only authorized traffic from trusted sources could access the virtual machines.
+- Built-in Firewalls: Configured Azure's built-in firewalls on the virtual machines to restrict unauthorized access and protect resources from malicious connections. This involved fine-tuning firewall rules based on the service and responsibilities of each VM, mitigating the attack surface.
+- Private Endpoints: Replaced public endpoints with private endpoints for Azure Key Vault and Storage Containers. This limited access to the virtual network, ensuring sensitive resources were not exposed to the public Internet.
 
 ## Attack Maps Before Hardening / Security Controls
 ![nsg-malicious-allowed-in](https://github.com/erickjsanz/Cloud-Honeypot/assets/7691426/9fd9965f-34ff-4d79-8abc-2b9d28dffd76)
